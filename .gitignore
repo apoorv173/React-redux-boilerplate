@@ -8,3 +8,5 @@ build
 dist/
 __node_modules
 *.txt
+coverage/
+coverage

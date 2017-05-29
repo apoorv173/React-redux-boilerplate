@@ -20,8 +20,7 @@
     "test": "jest",
     "test:watch": "jest -c --watch",
     "test:coverage": "jest -c --coverage",
-    "precommit": "lint-staged",
-    "validate": "npm ls"
+    "precommit": "lint-staged"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -91,5 +90,9 @@
       "es6"
     ],
     "collectCoverage": true
-  } 
+  },
+  "pre-commit": [
+    "lint:fix",
+    "test"
+  ]
 }
