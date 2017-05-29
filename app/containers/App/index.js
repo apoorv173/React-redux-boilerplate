@@ -10,12 +10,12 @@ const App = () => (
   <main>
     <Header />
 
-		    <Switch>
-		        <Route path="/budget" component={Budget} />
-		            <Route path="/reports" component={Reports} />
-		          <Redirect to="/budget" />
-		                     </Switch>
-		           </main>
+    <Switch>
+      <Route path="/budget" component={Budget} />
+      <Route path="/reports" component={Reports} />
+      <Redirect to="/budget" />
+    </Switch>
+  </main>
 );
 
 export default App;

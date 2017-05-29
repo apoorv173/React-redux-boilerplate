@@ -20,7 +20,8 @@
     "test": "jest",
     "test:watch": "jest -c --watch",
     "test:coverage": "jest -c --coverage",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "validate": "npm ls"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -68,6 +69,7 @@
     "d3": "4.7.4",
     "jest": "^20.0.4",
     "pre-commit": "^1.2.2",
+    "precommit-hook": "^3.0.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
     "react-hot-loader": "^3.0.0-beta.7",
@@ -89,11 +91,5 @@
       "es6"
     ],
     "collectCoverage": true
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ]
-  }
+  } 
 }
