@@ -1,11 +1,12 @@
-import App from '../../app/components/Loading';
 import React from 'react';
 import {shallow} from 'enzyme';
+import Header from '../../app/components/Header';
+
 describe('sdsd sd',()=>{
     let wrapper;
 
     beforeEach(()=>{
-        wrapper = shallow(<App />);
+        wrapper = shallow(<Header />);
         
     })
 
